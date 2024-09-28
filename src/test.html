@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #33333336;
+        }
+        .bel{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(196, 196, 218);
+            clip-path: inset(0px -100%);
+            z-index: 999999;
+            text-align: center;
+            line-height: 100px;
+            cursor: default;
+            user-select: auto;
+        }
+        .del{
+            width: 200px;
+            height: 50px;
+            background-color: rgb(27, 64, 107);
+            color: white;
+            line-height: 50px;
+            text-align: center;
+            margin: auto;
+        }
+        .wrapper .container {
+            color: blue;
+        }
+        .wrapper > .container {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="bel">Flan</div>
+    <div class="del">Imam &#8987</div>
+    <div class="wrapper">
+        <div class="container">I am a direct child of .wrapper</div>
+      
+        <div class="nested">
+          <div class="container">I am a descendant of .wrapper, but not a direct child</div>
+        </div>
+      </div>
+    <script>
+        console.log(2*2)
+    </script>
+</body>
+</html>
